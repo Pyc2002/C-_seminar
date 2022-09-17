@@ -9,11 +9,6 @@
 Console.Write("Введите целое число: ");
 int num = Convert.ToInt32(Console.ReadLine());
 
-if (num % 2 == 0)
-{
-    Console.WriteLine($"Да, число {num} является четным");
-}
-else 
-{
-Console.WriteLine($"Нет, число {num} не является четным");
-}
+if (num % 2 == 0) Console.WriteLine($"Да, число {num} является четным");
+else Console.WriteLine($"Нет, число {num} не является четным");
+
