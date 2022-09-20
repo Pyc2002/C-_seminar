@@ -21,7 +21,8 @@ int thirdDigit = FindThirdDigit(num);
 Console.WriteLine($"В числе {num} третья цифра -> {thirdDigit} ");
 }
 
-// if (num < 100) Console.WriteLine($"В числе {num} третьей цифры нет");  // Еще один способ
+// Еще один способ:
+// if (num < 100) Console.WriteLine($"В числе {num} третьей цифры нет");  
 // else 
 // {
 //     void FindThirdDigit(int number)
