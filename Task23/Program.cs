@@ -10,7 +10,7 @@ int num = Convert.ToInt32(Console.ReadLine());
 if (num < 0) Console.WriteLine("Ошибка! Введите положительное число");
 else
 {
-void Square (int number)
+void Cubing (int number)
 {
     int index = 1;
     while (index <= number)
@@ -20,5 +20,5 @@ void Square (int number)
     }
     return;
 }
-Square(num);
+Cubing(num);
 }
