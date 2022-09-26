@@ -18,3 +18,6 @@ int SumNumbers(int num)
     }
     return sum;
 }
+
+int sumNumbers = SumNumbers(number);
+Console.WriteLine($"Сумма чисел от 1 до {number} - {sumNumbers}");
