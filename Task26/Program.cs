@@ -5,8 +5,8 @@
 // 78 -> 2
 // 89126 -> 5
 
-Console.WriteLine("Введите число: ");
-int number = Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine("Введите число: ");
+// int number = Convert.ToInt32(Console.ReadLine());
 
 // int sumOfDigits(int num)
 // {
