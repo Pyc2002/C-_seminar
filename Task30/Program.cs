@@ -12,22 +12,27 @@
 
 // for (int i = 0; i < array.length; i++)
 // {
-    
+
 // }
 
-int[] array = new int[8];
+Console.Write("Введите размер массива: ");
+int num = Convert.ToInt32(Console.ReadLine());
 
-FillArrayRandom();
-PrintArray();
+int[] arrayGlobal = new int[num];
 
-void FillArrayRandom()
+FillArrayRandom(arrayGlobal);
+PrintArray(arrayGlobal);
+
+void FillArrayRandom(int[] array)
 {
-    for (int i = 0; i <= array.Length - 1; i++) array[i] = new Random().Next(0, 2);
+    Random rnd = new Random();
+    for (int i = 0; i <= array.Length - 1; i++)
+        array[i] = rnd.Next(0, 2);
 }
 
-void PrintArray()
+void PrintArray(int[] array)
 {
-    Console.Write($"[");
+    Console.Write("[");
     for (int i = 0; i <= array.Length - 2; i++) Console.Write($"{array[i]},");
     Console.Write($"{array[array.Length - 1]}]");
 }
