@@ -29,10 +29,10 @@ int num = Convert.ToInt32(Console.ReadLine());
 bool FindDigit(int[] array, int number)
 {
     for (int i = 0; i < array.Length; i++)
-    
+
         if (number == array[i]) return true;
-        return false;
-    
+    return false;
+
 }
 
 int[] arrayGlobal = CreateArrayRndInt(10, -3, 3);
