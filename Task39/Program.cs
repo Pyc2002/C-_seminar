@@ -24,22 +24,22 @@ void PrintArray(int[] array)
     Console.WriteLine($"{array[array.Length - 1]}]");
 }
 
-// void ReverseArray (int [] array)
-// {
-//     int size = array.Length;
-//     int index1 = 0;
-//     int index2 = size - 1;
+void ReverseArray (int [] array)
+{
+    int size = array.Length;
+    int index1 = 0;
+    int index2 = size - 1;
 
-//     while (index1 < index2)
-//     {
-//         int obj = array[index1];
-//         array[index1] = array[index2];
-//         array[index2] = obj;
+    while (index1 < index2)
+    {
+        int obj = array[index1];
+        array[index1] = array[index2];
+        array[index2] = obj;
 
-//         index1++;
-//         index2--; 
-//     }
-// }
+        index1++;
+        index2--; 
+    }
+}
 
 
 
