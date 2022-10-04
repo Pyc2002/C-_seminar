@@ -5,34 +5,34 @@
 // 2 -> 10
 
 
-Console.Write("Введите целое положительное число:");
-int numA = Convert.ToInt32(Console.ReadLine());
+// Console.Write("Введите целое положительное число:");
+// int numA = Convert.ToInt32(Console.ReadLine());
 
-// void ConvertToBin(int num)
-// {
-//     string bin = default;
+// // void ConvertToBin(int num)
+// // {
+// //     string bin = default;
 
-//     if (num > 0)
-//     {
-//         if (num % 2 == 1) bin += "1";
-//             else bin+= "0";
-//         ConvertToBin(num / 2);    
-//     }
-//      Console.Write(bin);
-// }
+// //     if (num > 0)
+// //     {
+// //         if (num % 2 == 1) bin += "1";
+// //             else bin+= "0";
+// //         ConvertToBin(num / 2);    
+// //     }
+// //      Console.Write(bin);
+// // }
 
-void ConvertToBin2(int num)
-{
-    string bin = default;
+// // void ConvertToBin2(int num)
+// // {
+// //     string bin = default;
 
-     if (num > 0)
-     {
-        bin += num % 2;         
-        ConvertToBin2(num / 2);    
-     }   
+// //      if (num > 0)
+// //      {
+// //         bin += num % 2;         
+// //         ConvertToBin2(num / 2);    
+// //      }   
 
-    Console.Write(bin);
-}
+// //     Console.Write(bin);
+// // }
 
-// ConvertToBin(numA);
-ConvertToBin2(numA);
+// // // ConvertToBin(numA);
+// // ConvertToBin2(numA);
