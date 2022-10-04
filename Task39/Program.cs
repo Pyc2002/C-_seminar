@@ -45,5 +45,5 @@ void ReverseArray (int [] array)
 
 int [] arr = CreateArrayRndInt(5, 1, 9);
 PrintArray(arr);
-// ReverseArray(arr);
+ReverseArray(arr);
 PrintArray(arr);
