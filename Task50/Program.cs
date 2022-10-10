@@ -30,21 +30,22 @@ void PrintMatrix(int[,] matrix)
         Console.Write("|");
         for (int j = 0; j < matrix.GetLength(1); j++)
         {
-            if (j < matrix.GetLength(1) - 1) Console.Write($"{matrix[i, j], 4} | ");
-            else Console.Write($"{matrix[i, j], 4} ");
+            if (j < matrix.GetLength(1) - 1) Console.Write($"{matrix[i, j],4} | ");
+            else Console.Write($"{matrix[i, j],4} ");
         }
         Console.WriteLine("|");
     }
 }
 
-void FindElement (int[,] matrix, int numRow, int numColumn)
+void FindElement(int[,] matrix, int numRow, int numColumn)
 {
-    if (numRow > matrix.GetLength(0) || numColumn > matrix.GetLength(1)) Console.Write($"{numRow}, {numColumn} -> такого элемента в массиве нет");
-    else Console.Write($"{numRow}, {numColumn} -> {matrix[numRow - 1,numColumn - 1]}");
+    if (numRow > matrix.GetLength(0) || numColumn > matrix.GetLength(1)) 
+    Console.Write($"{numRow}, {numColumn} -> такого элемента в массиве нет");
+    else Console.Write($"{numRow}, {numColumn} -> {matrix[numRow - 1, numColumn - 1]}");
 }
 
 
-int[,] array2D = CreateMatrixRndInt(4, 4, 1, 10);
+int[,] array2D = CreateMatrixRndInt(3, 4, 1, 10);
 PrintMatrix(array2D);
 
 Console.Write("Введите позицию строки: ");
