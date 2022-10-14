@@ -16,15 +16,15 @@
 //     return number;
 // }
 
-int SumOfDig(int num) //453  //45
+int SumOfDig(int num)
 {
-    int result =num % 10; /// 3
-    Console.WriteLine($"Input: {num}, sum: {result}");
+    int result =num % 10; 
+    
     if (num != 0) result += SumOfDig(num / 10); 
     return result;
 }
 
-Console.WriteLine("type N: ");
+Console.WriteLine("Введите число: ");
 int number = Convert.ToInt32(Console.ReadLine());
 int sum = SumOfDig(number);
-Console.WriteLine($"SUM: {sum}");
+Console.WriteLine($"{number} -> {sum}");
