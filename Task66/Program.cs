@@ -9,16 +9,19 @@ int numberM = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Введите второе число:  ");
 int numberN = Convert.ToInt32(Console.ReadLine());
 
-if (numberM == numberN) Console.Write("Введенные числа одинаковы");
-int res = SumElemetsOfNumber(numberM, numberN);
-Console.Write($"Первое число = {numberM}; второе число = {numberN} -> {res}");
+int res = default;
+if (numberM == numberN) Console.Write("Введенные числа одинаковы!");
+else
+{
+    res = SumElemetsOfNumber(numberM, numberN);
+    Console.Write($"Первое число = {numberM}; второе число = {numberN} -> {res}");
+}
 
 
 int SumElemetsOfNumber(int num1, int num2)
 {
-   int result = num2;
+    int result = num2;
     if (num1 < num2) result += SumElemetsOfNumber(num1, num2 - 1);
-   
     else if (num1 > num2) result += SumElemetsOfNumber(num1, num2 + 1);
     return result;
 }
