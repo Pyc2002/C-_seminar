@@ -8,7 +8,6 @@ int numberM = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Введите второе число:  ");
 int numberN = Convert.ToInt32(Console.ReadLine());
 
-int res = default;
 if (numberM < 0 || numberN < 0) Console.Write("Введенно отрицательное число!");
 else Console.Write($"Первое число = {numberM}; второе число = {numberN} -> {AckermanFunction(numberM, numberN)}");
 
